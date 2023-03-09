@@ -14,8 +14,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/timer', (req, res) => {
-	delay(9000);
-	return res.send(`Ding ding ding! ${process.pid}`);
+	delay(4000);
+	return res.send(`Beep beep beep! ${process.pid}`);
 });
 
 console.log('Worker process started.');
